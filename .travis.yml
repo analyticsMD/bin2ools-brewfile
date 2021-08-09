@@ -49,6 +49,7 @@ install:
   #- echo $TRAVIS_PULL_REQUEST
   #- 'if [ "$TRAVIS_PULL_REQUEST" = "false" ];then echo TRAVIS_PULL_REQUEST test; fi'
   #- 'if [ "$TRAVIS_PULL_REQUEST" = "false" ];then git clone git@github.com:$testrepo;else git clone https://github.com/$testrepo; fi'
+  - git clone https://github.com/$testrepo
   - cd $testreponame
   - cp ../homebrew-file/test/BrewfileTest ./Brewfile
   - cp ../homebrew-file/test/BrewfileExt ./BrewfileExt
